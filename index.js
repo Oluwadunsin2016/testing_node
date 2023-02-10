@@ -13,7 +13,7 @@ app.use(cors())
 const userRouter=require('./routes/user.route');
 app.use('/users',userRouter)
 
-mongoose.connect("mongodb+srv://Stevo2202:68225901@cluster0.dgi9f6m.mongodb.net/virtual_db?retryWrites=true&w=majority",(err)=>{
+mongoose.connect(URI,(err)=>{
 if (err) {
     console.log("Mongoose could not connect");
 }else{
